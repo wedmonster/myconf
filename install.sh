@@ -1,5 +1,6 @@
 #!/bin/bash
 
 cp ./.bashrc ~/
+cp ./.bash_profile ~/
 
-source ~/.bashrc
+source ~/.bash_profile

@@ -56,16 +56,11 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
-parse_git_branch() {
-    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/[\1]/'
-}
-
-
 if [ "$color_prompt" = yes ]; then
-    # PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
     # Custom bash prompt via kirsle.net/wizards/ps1.html
    #PS1="\[$(tput bold)\]\[$(tput setaf 6)\]\t \[$(tput setaf 2)\][\[$(tput setaf 3)\]\u\[$(tput setaf 1)\]@\[$(tput setaf 3)\]\h \[$(tput setaf 6)\]\W\[$(tput setaf 2)\]]\[$(tput setaf 4)\]\\$ \[$(tput sgr0)\]"
-   PS1="\[$(tput bold)\]\[\033[38;5;2m\]$(parse_git_branch) \[$(tput setaf 0)\][\w]\n\[$(tput bold)\]\[$(tput setaf 6)\]\t \[$(tput setaf 2)\][\[$(tput setaf 3)\]\u\[$(tput sgr0)\]@\[$(tput setaf 3)\]\[$(tput bold)local\] \[$(tput bold)\]\[$(tput setaf 6)\]\W\[$(tput sgr0)\]\[$(tput bold)\]\[$(tput setaf 2)\]]\[$(tput setaf 4)\]\\$ \[$(tput sgr0)\]"
+    #PS1="\[$(tput bold)\]\[\033[38;5;2m\]$(parse_git_branch) \[$(tput setaf 0)\][\w]\n\[$(tput bold)\]\[$(tput setaf 6)\]\t \[$(tput setaf 2)\][\[$(tput setaf 3)\]\u\[$(tput sgr0)\]@\[$(tput setaf 3)\]\[$(tput bold)local\] \[$(tput bold)\]\[$(tput setaf 6)\]\W\[$(tput sgr0)\]\[$(tput bold)\]\[$(tput setaf 2)\]]\[$(tput setaf 4)\]\\$ \[$(tput sgr0)\]"
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
@@ -121,3 +116,6 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+
+

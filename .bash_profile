@@ -15,7 +15,7 @@ function parse_git_branch() {
 }
 
 
-function parse_git_dirty() {
+function parse_git_dirty {
     status=`git status 2>&1 | tee`
     dirty=`echo -n "${status}" 2> /dev/null | grep "modified:" &> /dev/null; echo "$?"`
     untracked=`echo -n "${status}" 2> /dev/null | grep "Untracked files" &> /dev/null; echo "$?"`
@@ -48,4 +48,4 @@ function parse_git_dirty() {
         echo ""
     fi
 }
-export PS1="\[$(tput bold)\]\[\033[38;5;2m\]\`parse_git_branch\` \[$(tput setaf 0)\][\w]\n\[$(tput bold)\]\[$(tput setaf 6)\]\t \[$(tput setaf 2)\][\[$(tput setaf 3)\]\u\[$(tput sgr0)\]@\[$(tput setaf 3)\]\[$(tput bold)local\] \[$(tput bold)\]\[$(tput setaf 6)\]\W\[$(tput sgr0)\]\[$(tput bold)\]\[$(tput setaf 2)\]]\[$(tput setaf 4)\]\\$ \[$(tput sgr0)\]"
+export PS1="\[$(tput bold)\]\[$(tput setaf 0)\][\w] \[\033[38;5;2m\]\`parse_git_branch\` \n\[$(tput bold)\]\[$(tput setaf 6)\]\t \[$(tput setaf 2)\][\[$(tput setaf 3)\]\u\[$(tput sgr0)\]@\[$(tput setaf 3)\]\[$(tput bold)local\] \[$(tput bold)\]\[$(tput setaf 6)\]\W\[$(tput sgr0)\]\[$(tput bold)\]\[$(tput setaf 2)\]]\[$(tput setaf 4)\]\\$ \[$(tput sgr0)\]"
