@@ -14,8 +14,8 @@ syntax on
 "--------
 " color scheme
 set background=dark
-color solarized
-"color smyck
+"color solarized
+color smyck
 
 " highlight current line
 au WinLeave * set nocursorline nocursorcolumn
