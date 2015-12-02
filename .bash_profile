@@ -1,4 +1,4 @@
-source .bashrc
+#source .bashrc
 eval `dircolors ~/.dir_colors/dircolors.ansi-dark`
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
@@ -48,4 +48,13 @@ function parse_git_dirty {
         echo ""
     fi
 }
-export PS1="\[$(tput bold)\]\[$(tput setaf 0)\][\w] \[\033[38;5;2m\]\`parse_git_branch\` \n\[$(tput bold)\]\[$(tput setaf 6)\]\t \[$(tput setaf 2)\][\[$(tput setaf 3)\]\u\[$(tput sgr0)\]@\[$(tput setaf 3)\]\[$(tput bold)local\] \[$(tput bold)\]\[$(tput setaf 6)\]\W\[$(tput sgr0)\]\[$(tput bold)\]\[$(tput setaf 2)\]]\[$(tput setaf 4)\]\\$ \[$(tput sgr0)\]"
+export PS1="\[$(tput bold)\]\[$(tput setaf 0)\][\w] \[\033[38;5;2m\]\`parse_git_branch\` \n\[$(tput bold)\]\[$(tput setaf 6)\]\t \[$(tput setaf 2)\](\[$(tput setaf 3)\]\u\[$(tput sgr0)\]@\[$(tput setaf 3)\]\h \[$(tput bold)\]\[$(tput setaf 6)\]\W\[$(tput sgr0)\]\[$(tput bold)\]\[$(tput setaf 2)\])\[$(tput setaf 4)\]\\$ \[$(tput sgr0)\]"
+export PATH="$PATH:/usr/include"
+#export PS1="\[$(tput bold)\]\[$(tput setaf 6)\]\W\[$(tput bold)\]\[$(tput setaf 2)\])\[$(tput setaf 4)\]\$ "
+
+
+
+# aliases
+alias ls='ls --color=always'
+alias ll='ls -alF'
+
