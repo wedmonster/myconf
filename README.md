@@ -6,9 +6,13 @@ README for GST
 Overview
 -----
 GST is Graph Searching Tool in MATLAB. 
+
 Version : 1.0.1
+
 Date: Nov 30, 2015
+
 Authors: Jinhong Jung (*jinhongjung@snu.ac.kr*), U Kang (*ukang@snu.ac.kr*)
+
 
 Getting Started
 ------
