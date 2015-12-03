@@ -1,7 +1,7 @@
 #!/bin/bash
 
-cp ./.bashrc ~/
-cp ./.bash_profile ~/
+cp ./.bashrc ~/.bashrc
+cp ./.bash_profile ~/.bash_profile
 cp -r ./.dir_colors ~/
 cp -r ./.vim ~/
 cp -r ./.tmux ~/
@@ -10,6 +10,11 @@ cp -r ./.tmux ~/
 if [ -f ~/.bashrc ]; then
     . ~/.bashrc
 fi
+
+if [ -f ~/.bash_profile ]; then
+    . ~/.bash_profile
+fi
+
 
 if [ -f ~/.tmux.conf ]; then
     echo "Remove the existing tmux.conf"
