@@ -57,4 +57,4 @@ export PATH="$PATH:/usr/include:/usr/local/bin"
 # aliases
 alias ls='ls --color=always'
 alias ll='ls -alF'
-
+alias tmux='tmux -2'
