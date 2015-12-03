@@ -3,7 +3,6 @@
 cp ./.bashrc ~/
 cp ./.bash_profile ~/
 cp -r ./.dir_colors ~/
-cp ./.vimrc ~/
 cp -r ./.vim ~/
 cp -r ./.tmux ~/
 
@@ -29,14 +28,25 @@ case "$(uname -s)" in
 esac
 
 # install tmux-mem-cpu-load
+echo "Install tmux-mem-cpu-load module in tmx"
 PWD=$(pwd)
 cd ~/.tmux
-git submodule init
-git submodule update
 cd ~/.tmux/vendor/tmux-mem-cpu-load
 cmake .
 make
 sudo make install
 tmux source-file ~/.tmux.conf
 cd $PWD
+
+# install vim
+if [ -f ~/.vimrc ]; then
+    echo "Remove the existing tmux.conf"
+    rm ~/.vimrc
+    echo "Install .vimrc"
+    ln -s ~/.vim/.vimrc ~/.vimrc
+fi
+
+# update plugins in vim
+echo "Update plugins in vim"
+vim +PluginInstall +qall
 
