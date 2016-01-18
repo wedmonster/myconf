@@ -1,4 +1,5 @@
-#source .bashrc
+#!/bin/bash
+#. ~/.bashrc
 eval `dircolors ~/.dir_colors/dircolors.ansi-dark`
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced

@@ -45,11 +45,12 @@ cd $PWD
 
 # install vim
 if [ -f ~/.vimrc ]; then
-    echo "Remove the existing tmux.conf"
+    echo "Remove the existing vim.conf"
     rm ~/.vimrc
-    echo "Install .vimrc"
-    ln -s ~/.vim/.vimrc ~/.vimrc
 fi
+
+echo "Install .vimrc"
+ln -s ~/.vim/.vimrc ~/.vimrc
 
 # update plugins in vim
 echo "Update plugins in vim"
