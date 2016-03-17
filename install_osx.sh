@@ -87,6 +87,6 @@ if [ -f ~/.tmux.conf ]; then
     rm ~/.tmux.conf
 fi
 
-ln -s ~/.tmux/.tmux-osx.conf ~/.tmux.conf
+ln -s ~/.tmux/.tmux.conf ~/.tmux.conf
 
 

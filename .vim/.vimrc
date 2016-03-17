@@ -160,6 +160,8 @@ let g:user_emmet_expandabbr_key='<C-j>'
 
 " powerline
 "let g:Powerline_symbols = 'fancy'
+set rtp+=$POWERLINE_HOME/bindings/vim
+set laststatus=2
 
 " NeoComplCache
 let g:neocomplcache_enable_at_startup=1
