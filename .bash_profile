@@ -1,14 +1,15 @@
 #!/bin/bash
 
 if [ -f ~/.bashrc ]; then
-	. ~/.bashrc
+    . ~/.bashrc
 fi
 
 if [ -f ~/.path ]; then
     . ~/.path
 fi
 
-
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
 export XDG_CONFIG_DIRS='~/.config'
 
 # set POWERLINE_HOME
@@ -19,6 +20,9 @@ fi
 
 # apply powerline in bash
 if [ -f $POWERLINE_HOME/bindings/bash/powerline.sh ]; then
+    powerline-daemon -q
+    POWERLINE_BASH_CONTINUATION=1
+    POWERLINE_BASH_SELECT=1
     source $POWERLINE_HOME/bindings/bash/powerline.sh
 fi
 

@@ -40,8 +40,17 @@ which -s tmux
 if [[ $? != 0 ]] ; then
     brew install tmux
 else
-    echo "mux is already installed. checking the version:"
+    echo "tmux is already installed. checking the version:"
     tmux -V
+fi
+
+echo "install cmake"
+which -s cmake
+if [[ $? != 0 ]] ; then
+    brew install cmake
+else
+    echo "cmake is already installed. checking the version:"
+    #
 fi
 
 ## Install modules
@@ -56,6 +65,15 @@ else
     pip show powerline-status | grep powerline-status
 fi
 
+
+# install tmux-mem-cpu-load
+MPWD=$(pwd)
+cd .tmux/vendor/tmux-mem-cpu-load
+cmake .
+make
+make install
+cd $MPWD
+sudo cp .powerline/powerline.conf $POWERLINE_HOME/bindings/tmux # powerline.conf is modified for tmux-mem-cpu-load
 ## Set configuration
 
 # set bash configuration
@@ -89,4 +107,6 @@ fi
 
 ln -s ~/.tmux/.tmux.conf ~/.tmux.conf
 
-
+# set powerline-status configuration
+cp -r .powerline/* ~/.config/powerline
+powerline-daemon -r

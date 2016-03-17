@@ -1,11 +1,11 @@
 #!/bin/bash
 
-USER=$(whoami)
+#USER=$(whoami)
 
-if [ "$USER" != "root" ]; then
-    echo "This script must be run by root. Try use sudo"
-    exit 1
-fi
+#if [ "$USER" != "root" ]; then
+#    echo "This script must be run by root. Try use sudo"
+#    exit 1
+#fi
 
 case "$(uname -s)" in
     Darwin)

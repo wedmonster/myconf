@@ -2,6 +2,7 @@ source ~/.vim/bundles.vim
 
 " encoding dectection
 set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1
+set encoding=utf-8
 
 " enable filetype dectection and ft specific plugin/indent
 filetype plugin indent on
@@ -159,7 +160,7 @@ let NERDCompactSexyComs=1
 let g:user_emmet_expandabbr_key='<C-j>'
 
 " powerline
-"let g:Powerline_symbols = 'fancy'
+let g:Powerline_symbols = 'fancy'
 set rtp+=$POWERLINE_HOME/bindings/vim
 set laststatus=2
 
