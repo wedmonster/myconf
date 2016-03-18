@@ -10,9 +10,9 @@
 		"window_name":          { "fg": "solarized:base3",  "bg": "solarized:base01", "attrs": ["bold"] },
 		"session":              { "fg": "solarized:base3",  "bg": "solarized:base01", "attrs": [] },
 		"session:prefix":       { "fg": "solarized:base01", "bg": "solarized:base3",  "attrs": [] },
-	    "battery_full":         {"fg": "white",      "bg": "gray0",    "attrs": ["bold"]},
-        "battery":              {"fg": "white",      "bg": "gray0",    "attrs": ["bold"]},
-        "battery_online":     {"fg": "white",      "bg": "gray0",    "attrs": ["bold"]},
-        "battery_ac_state":     {"fg": "white",      "bg": "gray0",    "attrs": ["bold"]}
+	    "battery_full":         {"fg": "solarized:blue",      "bg": "solarized:base02",    "attrs": ["bold"]},
+        "battery":              {"fg": "solarized:base3",      "bg": "solarized:base02",    "attrs": ["bold"]},
+        "battery_online":       {"fg": "solarized:base3",      "bg": "solarized:base02",    "attrs": ["bold"]},
+        "battery_ac_state":     {"fg": "solarized:red",      "bg": "solarized:base02",    "attrs": ["bold"]}
     }
 }

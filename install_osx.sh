@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ## Install programs: 
-# list: brew, python, macvim, tmux
+# list: brew, python, macvim, tmux, cmake
 
 # install brew
 echo "install brew"
@@ -53,6 +53,15 @@ else
     #
 fi
 
+echo "install coreutils"
+
+which -s dircolors
+if [[ $? != 0 ]]; then
+    brew install coreutils
+else
+    echo "dircolors is already installed. checking the version:"
+fi
+
 ## Install modules
 
 # install powerline-status
@@ -67,6 +76,7 @@ fi
 
 
 # install tmux-mem-cpu-load
+echo "install tmux-mem-cpu-load"
 MPWD=$(pwd)
 cd .tmux/vendor/tmux-mem-cpu-load
 cmake .
@@ -76,14 +86,20 @@ cd $MPWD
 sudo cp .powerline/powerline.conf $POWERLINE_HOME/bindings/tmux # powerline.conf is modified for tmux-mem-cpu-load
 ## Set configuration
 
+echo "install .dir_colors"
+cp -r ./.dir_colors ~/
+
 # set bash configuration
 echo "set bash configuration"
 cp .bashrc ~/.bashrc
 cp .bash_profile ~/.bash_profile
+cp .bash_aliases ~/.bash_aliases
+cp .path ~/.path
 
 if [ -f ~/.bashrc ]; then
     . ~/.bashrc
 fi
+source ~/.bash_profile
 
 # set vim configuration
 echo "set vim configuration"

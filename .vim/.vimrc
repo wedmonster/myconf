@@ -15,8 +15,8 @@ syntax on
 "--------
 " color scheme
 set background=dark
-"color solarized
-color smyck
+color solarized
+"color smyck
 
 set guifont=Sauce\ Code\ Powerline:h12
 

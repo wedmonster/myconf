@@ -12,7 +12,7 @@
 		"session:prefix":       {"fg": "gray90",     "bg": "darkblue", "attrs": ["bold"]},
         "battery_full":         {"fg": "white",      "bg": "gray0",    "attrs": ["bold"]},
         "battery":              {"fg": "white",      "bg": "gray0",    "attrs": ["bold"]},
-        "battery_online":     {"fg": "white",      "bg": "gray0",    "attrs": ["bold"]},
+        "battery_online":       {"fg": "white",      "bg": "gray0",    "attrs": ["bold"]},
         "battery_ac_state":     {"fg": "white",      "bg": "gray0",    "attrs": ["bold"]}
 
     }

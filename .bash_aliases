@@ -1,4 +1,7 @@
 #!/bin/bash
+alias ls="ls --color=always" 
+alias grep="grep --color=always"
+alias egrep="egrep --color=always"
 
 alias ll='ls -alF'
 alias la='ls -A'
