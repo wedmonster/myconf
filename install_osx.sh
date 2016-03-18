@@ -94,7 +94,13 @@ if [ -f ~/.vimrc ]; then
     rm ~/.vimrc
 fi
 
+if [ -f ~/.gvimrc ]; then
+    echo "remove existing ~/.gvimrc"
+    rm ~/.gvimrc
+fi
+
 ln -s ~/.vim/.vimrc ~/.vimrc
+ln -s ~/.vim/.gvimrc ~/.gvimrc
 vim +PluginInstall +qall
 
 # set tmux configuration

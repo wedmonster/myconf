@@ -18,10 +18,12 @@ set background=dark
 "color solarized
 color smyck
 
+set guifont=Sauce\ Code\ Powerline:h12
+
 " highlight current line
-"au WinLeave * set nocursorline nocursorcolumn
-"au WinEnter * set cursorline cursorcolumn
-"set cursorline cursorcolumn
+au WinLeave * set nocursorline nocursorcolumn
+au WinEnter * set cursorline cursorcolumn
+set cursorline cursorcolumn
 
 " search
 set incsearch

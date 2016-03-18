@@ -7,8 +7,9 @@ Thsee files are for configurations of various programs such as bash or vim in my
 * Non-ASCII Font: 11pt, Sauce Code Powerline
 
 # To do
-- [ ] to enable wrapping features in vim
+- [x] to enable wrapping features in vim
 - [ ] to apply .dir_color for iterm
-- [ ] to automatically path powerline-font in ./install_osx.sh
-- [ ] to apply fonts supporting powerline for macvim
+- [ ] to automatically fatch powerline-font in ./install_osx.sh
+- [x] to apply fonts supporting powerline for macvim
 - [ ] to build ./install.sh for ubuntu
+- [ ] to integrate vim-latex (or survey it)
