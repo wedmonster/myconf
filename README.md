@@ -11,3 +11,4 @@ Thsee files are for configurations of various programs such as bash or vim in my
 - [ ] to apply .dir_color for iterm
 - [ ] to automatically path powerline-font in ./install_osx.sh
 - [ ] to apply fonts supporting powerline for macvim
+- [ ] to build ./install.sh for ubuntu
