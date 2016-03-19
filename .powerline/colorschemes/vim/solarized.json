@@ -23,9 +23,9 @@
 		"line_percent_gradient":    { "fg": "solarized:base3", "bg": "solarized:base00", "attrs": [] },
 		"position":                 { "fg": "solarized:base3", "bg": "solarized:base00", "attrs": [] },
 		"position_gradient":        { "fg": "green_yellow_orange_red", "bg": "solarized:base00", "attrs": [] },
-		"line_current":             { "fg": "solarized:base03", "bg": "solarized:base2", "attrs": ["bold"] },
-		"line_current_symbol":      { "fg": "solarized:base03", "bg": "solarized:base2", "attrs": [] },
-		"virtcol_current_gradient": { "fg": "GREEN_Orange_red", "bg": "solarized:base2", "attrs": [] },
+		"line_current":             { "fg": "solarized:base03", "bg": "solarized:base1", "attrs": ["bold"] },
+		"line_current_symbol":      { "fg": "solarized:base03", "bg": "solarized:base1", "attrs": [] },
+		"virtcol_current_gradient": { "fg": "solarized:base03", "bg":"solarized:base1", "attrs": ["bold"] },
 		"col_current":              { "fg": "solarized:base0", "bg": "solarized:base2", "attrs": [] },
 		"environment":              { "fg": "solarized:base1", "bg": "solarized:base02", "attrs": [] },
 		"attached_clients":         { "fg": "solarized:base1", "bg": "solarized:base02", "attrs": [] },
@@ -69,7 +69,8 @@
 				"position_gradient":      { "fg": "solarized:base3", "bg": "solarized:base1", "attrs": [] },
 				"line_current":           { "fg": "solarized:base03", "bg": "solarized:base3", "attrs": ["bold"] },
 				"line_current_symbol":    { "fg": "solarized:base03", "bg": "solarized:base3", "attrs": [] },
-				"col_current":            { "fg": "solarized:base0", "bg": "solarized:base3", "attrs": [] }
+		        "virtcol_current_gradient": { "fg": "solarized:base03", "bg":"solarized:base3", "attrs": ["bold"] },
+				"col_current":            { "fg": "solarized:base03", "bg": "solarized:base2", "attrs": ["bold"] }
 			}
 		},
 		"v": {

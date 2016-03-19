@@ -13,7 +13,7 @@ Currently, solarized-dark is used.
 * Non-ASCII Font: 11pt, Sauce Code Powerline
 
 # To do
-- [ ] to enable wrapping features in vim
+- [x] to enable wrapping features in vim, adopted nowrap
 - [x] to apply .dir_color for iterm
 - [ ] to automatically fatch powerline-font in ./install_osx.sh, https://github.com/powerline/fonts
 - [x] to apply fonts supporting powerline for macvim
@@ -24,4 +24,4 @@ Currently, solarized-dark is used.
 - [ ] to write smyck.json for tmux, vim, shell
 - [x] to check the symbol of the time in status-line of tmux's powerline, https://kr.piliapp.com/symbol/
 - [ ] to add weather feature in tmux
-- [x] to modify powerline in vim related to line percentage when NOMRAL mode 
+- [x] to modify powerline in vim related to line percentage, line number when NOMRAL mode
