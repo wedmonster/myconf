@@ -35,7 +35,7 @@
 		},
 
 		"time": {
-			"before": "⌚ "
+			"before": ""
 		},
 
 		"powerline.segments.common.net.network_load": {
@@ -45,7 +45,7 @@
 			}
 		},
 		"powerline.segments.common.net.hostname": {
-			"before": " "
+			"before": " "
 		},
 		"powerline.segments.common.bat.battery": {
 			"args": {
