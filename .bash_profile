@@ -16,6 +16,8 @@ eval `dircolors ~/.dir_colors/dircolors.ansi-universal`
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
+# set EDITOR for MATLAB
+export set EDITOR=vim
 
 
 # set POWERLINE_HOME
