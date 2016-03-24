@@ -144,6 +144,10 @@ if executable('coffeetags')
     \ }
 endif
 
+" markdown
+let g:vim_markdown_math = 1
+
+
 " Nerd Tree
 let NERDChristmasTree=0
 let NERDTreeWinSize=30

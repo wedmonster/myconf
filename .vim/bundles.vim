@@ -76,7 +76,8 @@ Bundle 'nono/jquery.vim'
 " Bundle 'nono/vim-handlebars'
 
 "------- markup language -------
-Bundle 'tpope/vim-markdown'
+Bundle 'plasticboy/vim-markdown'
+" Bundle 'tpope/vim-markdown'
 " Bundle 'timcharper/textile.vim'
 
 "------- Ruby --------

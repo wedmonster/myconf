@@ -25,5 +25,5 @@ Currently, solarized-dark is used.
 - [x] to check the symbol of the time in status-line of tmux's powerline, https://kr.piliapp.com/symbol/
 - [x] to modify powerline in vim related to line percentage, line number when NOMRAL mode
 - [x] to use surround - https://github.com/tpope/vim-surround
-- [ ] to search syntax highlight for markdownin vim
+- [x] to search syntax highlight for markdownin vim
 
